@@ -1,4 +1,4 @@
-License for everything exept the music in Assets/Musique/
+License for everything exept the music in Assets/Musique/ and the fonts in Assets/GUI/
 
 Copyright © 2014 Jan Wolff
  
