@@ -35,8 +35,10 @@ public class Outro : MonoBehaviour {
 		if(!anykey && nextText < Time.time)
 		{
 			currentText++;
-            if (currentText >= texts.Length)
-                anykey = true;
+			if (currentText >= texts.Length) {
+				anykey = true;
+				return;
+			}
 			nextText = Time.time + timePerText;
 			displaytext = texts[currentText];
 		}

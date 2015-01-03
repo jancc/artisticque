@@ -5,11 +5,9 @@ Temp/
 *.userprefs
 *.csproj
 *.pidb
-*.meta
 *.DS_Store
 *.blend1
 *.blend2
 *.unityproj
 .DS_Store
-*.meta
 *~*

@@ -39,8 +39,10 @@ public class Intro : MonoBehaviour {
 		if(nextText < Time.time)
 		{
 			currentText++;
-            if (currentText >= texts.Length)
-                Application.LoadLevel("Ingame");
+			if (currentText >= texts.Length) {
+				Application.LoadLevel("Ingame");
+				return;
+			}
 			nextText = Time.time + timePerText;
 			displaytext = texts[currentText];
 		}
