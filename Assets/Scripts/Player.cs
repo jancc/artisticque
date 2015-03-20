@@ -39,9 +39,9 @@ public class Player : MonoBehaviour {
         }
 
 		if(Mathf.Abs(input) > 0.1f)
-			animation.CrossFade("Walk", 0.2f);
+			GetComponent<Animation>().CrossFade("Walk", 0.2f);
 		else
-			animation.CrossFade("Stand", 0.2f);
+			GetComponent<Animation>().CrossFade("Stand", 0.2f);
 
 		transform.Translate(Vector3.right * speed * input * Time.deltaTime);
 
