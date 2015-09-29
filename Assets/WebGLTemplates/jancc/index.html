@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>%UNITY_WEB_NAME%</title>
+    <script src="loading_progress.js"></script>
+	<link rel="stylesheet" href="style.css">
+  </head>
+  <body class="template">
+	<div id="preloader">
+		<p id="loadertext">Please enable Java Script if you want to play a Java Script based game.</p>
+		<progress id="loadingbar" value="0.0" max="1.0"></progress>
+	</div>
+    <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+    %UNITY_WEBGL_LOADER_GLUE%
+  </body>
+</html>
